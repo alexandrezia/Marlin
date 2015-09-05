@@ -307,21 +307,21 @@
   //#define MENU_ADDAUTOSTART
 
   // Show a progress bar on HD44780 LCDs for SD printing
-  //#define LCD_PROGRESS_BAR
+  #define LCD_PROGRESS_BAR
 
   #if ENABLED(LCD_PROGRESS_BAR)
     // Amount of time (ms) to show the bar
     #define PROGRESS_BAR_BAR_TIME 2000
     // Amount of time (ms) to show the status message
-    #define PROGRESS_BAR_MSG_TIME 3000
+    #define PROGRESS_BAR_MSG_TIME 20000
     // Amount of time (ms) to retain the status message (0=forever)
-    #define PROGRESS_MSG_EXPIRE   0
+    #define PROGRESS_MSG_EXPIRE   20000
     // Enable this to show messages for MSG_TIME then hide them
-    //#define PROGRESS_MSG_ONCE
+    #define PROGRESS_MSG_ONCE
   #endif
 
   // This allows hosts to request long names for files and folders with M33
-  //#define LONG_FILENAME_HOST_SUPPORT
+  #define LONG_FILENAME_HOST_SUPPORT
 
   // This option allows you to abort SD printing when any endstop is triggered.
   // This feature must be enabled with "M540 S1" or from the LCD menu.
